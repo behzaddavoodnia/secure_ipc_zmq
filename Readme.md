@@ -1,18 +1,18 @@
-# A library for normal and secure IPC based on ZMQ sockets
+# A library for standard and secure IPC based on ZMQ sockets
 
 * You can use simple APIs like send_message() or send_secure_message() to sending information between two process or program.
 
-* We've used ZMQ DEALER socket to establish the bidirectional connection to sending and receveing messages.
+* We've used the ZMQ DEALER socket to establish the bidirectional connection to sending and receiving messages.
 
-* For build and run you need libmsgpack-dev, libzmq-dev, libczmq-dev and curve library.
+* For build and run you need libmsgpack-dev, libzmq-dev, libczmq-dev, and curve library.
 
-* This app uses CURVE security and ZAP as a communication protocol and also it uses Public/ Private key mechanesem to exchange the messages.
+* This app uses CURVE security and ZAP as a communication protocol and also it uses Public/ Private key mechanisms to exchange messages.
 
-* To run in appropriate manner you need to feed sender (or server) key to recevier (or client) process. 
+* To run in an appropriate manner you need to feed the sender (or server) key to the receiver (or client) process. 
 
-* IMPORTANT: You need to first run [./secure_proc1] then [./secure_proc2] to make and produce the pub key and cetificates into .curve and .cert directories, respectivily.
+* IMPORTANT: You need first to run [./secure_proc1] and then [./secure_proc2] to make and produce the pub key and certificates into .curve and .cert directories, respectively.
 
-* DO NOT EDIT the keys and certificates in .curve and .cert directoris.
+* DO NOT EDIT the keys and certificates in the .curve and .cert directories.
 
 * There is no priority to run [./proc1] or [./proc2] in normal communication.
 
