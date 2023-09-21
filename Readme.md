@@ -18,16 +18,19 @@
 
 ## Compile and Run
 
-* mkdir build && cd build
-
-* cmake .. && make
-
+```
+mkdir build && cd build
+cmake .. && make
+```
 ### Normal
 
-* ./proc2
-* ./proc1
-
+```
+./proc2
+./proc1
+```
 ### Secure with Verbose descriptions
 
-* ./secure_proc1
-* ./secure_proc2
+```
+./secure_proc1
+./secure_proc2
+```
